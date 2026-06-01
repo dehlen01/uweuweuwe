@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lenthava.com/sitemap.xml
+Sitemap: https://dehlenthavarajah.com/sitemap.xml
