@@ -235,6 +235,10 @@ main {
   pointer-events: none;
 }
 
+.secondary-main {
+  justify-content: flex-start;
+}
+
 .content {
   width: var(--main-block);
   max-width: calc(100vw - (2 * var(--edge)));
@@ -350,7 +354,7 @@ main {
   min-height: 9.92125em;
   font-size: inherit;
   line-height: inherit;
-  transform: translateX(var(--anchor-shift, 0));
+  transform: none;
 }
 
 .projects h2,
