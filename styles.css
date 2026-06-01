@@ -40,6 +40,7 @@
 html {
   min-height: 100%;
   background: var(--page);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -59,6 +60,15 @@ a:visited {
   text-decoration: underline;
   text-decoration-color: var(--underline);
   text-underline-offset: 0.2rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:active,
+button:active,
+[role="button"]:active {
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
 }
 
 a:hover {
