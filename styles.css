@@ -249,12 +249,9 @@ main {
   min-height: 1.35em;
 }
 
-.projects h2 {
-  min-height: 1.665em;
-}
-
+.projects h2,
 .k-note h2 {
-  min-height: 1.665em;
+  min-height: 1.35em;
 }
 
 .typing-text {
@@ -340,15 +337,15 @@ main {
 }
 
 .projects {
-  min-height: 12.4148rem;
-  font-size: 1.265rem;
-  line-height: 1.8975rem;
+  min-height: 9.92125em;
+  font-size: inherit;
+  line-height: inherit;
   transform: translateX(var(--anchor-shift, 0));
 }
 
 .projects h2,
 .k-note h2 {
-  font-size: 1.687rem;
+  font-size: 1.62rem;
 }
 
 .projects dl {
@@ -371,9 +368,9 @@ main {
 }
 
 .k-note {
-  min-height: 12.4148rem;
-  font-size: 1.265rem;
-  line-height: 1.8975rem;
+  min-height: 9.92125em;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .site-footer {
@@ -491,17 +488,24 @@ span.icon-link {
     line-height: 1.5rem;
   }
 
-  .projects,
-  .k-note {
-    min-height: 11.2475rem;
-    font-size: clamp(0.91rem, 4.25vw, 1rem);
-    line-height: 1.5rem;
-  }
-
   .intro h2,
   .projects h2,
   .k-note h2 {
     font-size: 1.5rem;
+  }
+
+  .projects,
+  .k-note {
+    width: calc(100vw - (2 * var(--edge)));
+    min-height: 11.2475rem;
+    font-size: clamp(0.91rem, 4.25vw, 1rem);
+    line-height: 1.5rem;
+    transform: none;
+  }
+
+  .projects h2,
+  .k-note h2 {
+    min-height: 1.665em;
   }
 
   main {
@@ -516,7 +520,7 @@ span.icon-link {
   }
 
   .k-note h2 {
-    font-size: 1.35rem;
+    font-size: clamp(1.35rem, 7vw, 1.5rem);
   }
 }
 
